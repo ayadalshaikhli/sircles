@@ -61,7 +61,7 @@ function Model({ props }) {
   });
   // useFrame((state) => (group.current.rotation.z = Math.sin(state.clock.getElapsedTime() / 2) * Math.PI)
   // )
-  const { nodes, materials } = useGLTF("/Iphonex.glb");
+  const { nodes, materials } = useGLTF("/iphonex.glb");
   const texture = useLoader(
     THREE.TextureLoader,
     "./picture/monetize_phone2.png"
