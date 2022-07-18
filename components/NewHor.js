@@ -26,19 +26,38 @@ function NewHor() {
                 width: "400%",
                 overflowX: "hidden !important",
               }}
-              className="arabic-left  text-2xl whitespace-nowrap bg-white overflow-hidden px-20 py-10"
+              className="arabic-left relative  text-2xl whitespace-nowrap overflow-hidden px-20 py-10"
             >
-              <div>
-                <div>POSITIVE VIBES ONLY</div>
-                <div>Sircles is a community of positivity and sharing.</div>
-                <div>
-                  Negativity, bullying and drama get checked at the door.
+              <div className="  absolute left-0 top-1/4 px-10 py-10 ">
+                <div
+                  style={{
+                    fontSize: "15.5rem",
+                  }}
+                >
+                  POSITIVE VIBES ONLY Be your best self Sircles is a community
+                  of positivity and sharing You can't always be positive all the
+                  time but in Sircles we are.. Negativity, bullying and drama
+                  get checked at the door.
                 </div>
-                <div>
-                  You can't always be positive all the time but in Sircles we
-                  are.
-                </div>
-                <div>Be your best self.</div>
+              </div>
+              <div
+                style={{
+                  position: "absolute",
+                  top: "0",
+                  left: "800px",
+                }}
+                className=" "
+              >
+                Ayad
+              </div>
+              <div
+                style={{
+                  position: "absolute",
+                  top: "0",
+                  left: "1800px",
+                }}
+              >
+                Mark
               </div>
             </div>
           </Tween>
@@ -46,16 +65,17 @@ function NewHor() {
       </Controller>
       <Controller>
         <Scene triggerHook="onLeave" duration="4000">
-          <Tween from={{ y: "-600" }} to={{ y: "-100%" }}>
+          <Tween from={{ x: "0" }} to={{ y: "-100%" }}>
             <div
               style={{
                 height: "100vh",
                 width: "400%",
+
                 overflowX: "hidden !important",
               }}
-              className="arabic-left flex justify-between text-2xl whitespace-nowrap bg-white overflow-hidden px-20 py-10"
+              className="arabic-left relative  text-2xl whitespace-nowrap bg-white overflow-hidden px-20 py-10"
             >
-              <div>
+              <div className=" absolute top-0 left-0">
                 <div>POSITIVE VIBES ONLY</div>
                 <div>Sircles is a community of positivity and sharing.</div>
                 <div>
@@ -67,14 +87,23 @@ function NewHor() {
                 </div>
                 <div>Be your best self.</div>
               </div>
-              <div>ayad</div>
+              <div
+                style={{
+                  position: "absolute",
+                  top: "0",
+                  left: "0",
+                }}
+                className="text-black "
+              >
+                ayad
+              </div>
             </div>
           </Tween>
         </Scene>
       </Controller>
       <Controller>
-        <Scene triggerHook="onLeave" duration="4000">
-          <Tween from={{ x: "950" }} to={{ x: "1950" }}>
+        <Scene triggerHook="onStart" duration="4000">
+          <Tween from={{ x: "-600" }} to={{ x: "-100%" }}>
             <div
               style={{
                 height: "100vh",
